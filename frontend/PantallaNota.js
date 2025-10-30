@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 30,
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
   },
   titulo: {
     fontSize: 24,
@@ -70,12 +70,14 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   input: {
-    fontSize: 18,
-    backgroundColor: '#ffffff',
-    padding: 15,
-    borderRadius: 10,
-    marginBottom: 20,
-  },
+  height: 800,  // O flex: 1, o minHeight: 200, etc. Prueba valores.
+  fontSize: 18,
+  backgroundColor: '#ffffff',
+  padding: 15,
+  borderRadius: 10,
+  marginBottom: 20,
+  textAlignVertical: 'top',
+},
   paleta: {
     flexDirection: 'row',
     marginBottom: 20,
